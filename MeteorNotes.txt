@@ -1,0 +1,14 @@
+meteor create --release 1.12.1 <project name>
+    --> We are using release 1.12.1 of Meteor
+
+meteor npm install react react-dom
+    --> We are using React and React-Dom together in these meteor instances
+
+meteor npm install
+    --> Make sure meteor installs all dependencies before actually running it
+
+Imports and public --> Meteor respects these directories and does not load them.
+    Understand that this is lazy loading - Meteor won't load these unless you tell it to.
+Client and server --> Meteor respects these directories and quickly loads them from either client and server.
+                    Everywhere else is fair-game for both client and server.
+    Understand that this is eager loading - Meteor will load these directories if they change.
