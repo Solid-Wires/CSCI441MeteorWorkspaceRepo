@@ -12,3 +12,4 @@ Imports and public --> Meteor respects these directories and does not load them.
 Client and server --> Meteor respects these directories and quickly loads them from either client and server.
                     Everywhere else is fair-game for both client and server.
     Understand that this is eager loading - Meteor will load these directories if they change.
+
