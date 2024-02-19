@@ -7,6 +7,9 @@ meteor npm install react react-dom
 meteor npm install
     --> Make sure meteor installs all dependencies before actually running it
 
+babeljs.io
+    --> Good for checking how exactly React is handling js xml.
+
 Imports and public --> Meteor respects these directories and does not load them.
     Understand that this is lazy loading - Meteor won't load these unless you tell it to.
 Client and server --> Meteor respects these directories and quickly loads them from either client and server.
