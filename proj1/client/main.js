@@ -1,22 +1,15 @@
-import { Template } from 'meteor/templating';
-import { ReactiveVar } from 'meteor/reactive-var';
+import React from 'react';
+import ReactDom from 'react-dom';
+import { Meteor } from 'meteor/meteor';
+import './main.html'; // Why do I have to explicitly state this??
 
-import './main.html';
+Meteor.startup(function () {
 
-Template.hello.onCreated(function helloOnCreated() {
-  // counter starts at 0
-  this.counter = new ReactiveVar(0);
-});
-
-Template.hello.helpers({
-  counter() {
-    return Template.instance().counter.get();
-  },
-});
-
-Template.hello.events({
-  'click button'(event, instance) {
-    // increment the counter when button is clicked
-    instance.counter.set(instance.counter.get() + 1);
-  },
+  let jsx = (
+    <div>
+      <h1>I am a JSX!</h1>
+    </div>
+  );
+  ReactDom.render(jsx, document.getElementById('content'));
+  console.log("Hello world, from client!");
 });
