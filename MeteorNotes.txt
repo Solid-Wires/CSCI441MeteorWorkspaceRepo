@@ -16,3 +16,6 @@ Client and server --> Meteor respects these directories and quickly loads them f
                     Everywhere else is fair-game for both client and server.
     Understand that this is eager loading - Meteor will load these directories if they change.
 
+In package.json, you'll notice meteor is an attribute. You must do these if you don't want to be confused:
+    a.) Remove it from there to restore the default behavior (Meteor loads main.* from either client or server)
+    b.) Leave it there and import all files related to main from each javascript entry point file (e.g. main.html and main.css).

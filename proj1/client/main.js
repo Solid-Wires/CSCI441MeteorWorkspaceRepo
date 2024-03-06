@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import { Meteor } from 'meteor/meteor';
-import './main.html'; // Why do I have to explicitly state this??
+//import './main.html';
 
 Meteor.startup(function () {
 
