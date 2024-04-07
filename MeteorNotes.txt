@@ -7,6 +7,9 @@ meteor npm install react react-dom
 meteor npm install
     --> Make sure meteor installs all dependencies before actually running it
 
+meteor add fourseven:scss
+    --> Make sure that scss is added to the meteor project so that you can do interesting stylization
+
 babeljs.io
     --> Good for checking how exactly React is handling js xml.
 

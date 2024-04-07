@@ -1,5 +1,6 @@
-import { Meteor } from 'meteor/meteor';
+import {Meteor} from 'meteor/meteor';
 
 Meteor.startup(() => {
-  // code to run on server at startup
+  // Runs on startup
+  console.log("My meteor server is running.");
 });

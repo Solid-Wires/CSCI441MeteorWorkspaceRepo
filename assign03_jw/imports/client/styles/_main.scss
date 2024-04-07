@@ -1,0 +1,17 @@
+* { // Global selector (mainly used for resetting attributes)
+    margin: 0;
+    padding: 0;
+}
+
+// Entire html page selector
+html {
+    font-size: 100%;
+}
+// Selector on the body of an HTML page
+body {
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+// Imports of other scss files used on this page
+
